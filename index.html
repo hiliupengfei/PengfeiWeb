@@ -1,486 +1,511 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" style="overflow-y: hidden;">
-  <head> 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" /> 
-  <meta name="renderer" content="webkit" /> 
-  <title>鹏飞网络科技有限公司</title> 
-  <meta name="keywords" content="石家庄网站建设,石家庄网站制作,石家庄网站设计,石家庄做网站,石家庄网站建设,鹏飞网络" /> 
-  <meta name="description" content="鹏飞网络专业从事石家庄网站建设、石家庄网站建设、石家庄网站制作；业务主要涉及全国各地，我们始终为您提供优质合理的网站制作报价及方案！" /> 
-  <link rel="stylesheet" href="css/style.css" /> 
-  <link rel="stylesheet" href="css/css.css" /> 
-  <link rel="stylesheet" href="css/page.css" /> 
-  <script src="js/jquery.js" type="text/javascript"></script>
-  <script src="js/umxTool.js" type="text/javascript"></script> 
-  <script src="js/jquery.imgpreload.min.js" type="text/javascript"></script> 
-  <script src="js/TweenMax.min.js" type="text/javascript"></script> 
-  <script src="js/page.js" type="text/javascript"></script> 
-  <script src="js/jquery.themepunch.revolution.min.js" type="text/javascript"></script> 
-  <script src="js/zzsc.js" type="text/javascript"></script> 
-  <script>
-    $(document).ready(function() {
-        if ($.fn.cssOriginal != undefined) $.fn.css = $.fn.cssOriginal;
-        $('.wide-banner').revolution({
-            delay: 7000,
-            startheight: 500,
-            startwidth: 1000,
-            hideThumbs: 200,
-            thumbWidth: 100,
-            // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
-            thumbHeight: 50,
-            thumbAmount: 5,
-            navigationType: "bullet",
-            // bullet, thumb, none
-            navigationArrows: "verticalcentered",
-            // nexttobullets, solo (old name verticalcentered), none
-            navigationStyle: "round",
-            // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
-            navigationHAlign: "center",
-            // Vertical Align top,center,bottom
-            navigationVAlign: "bottom",
-            // Horizontal Align left,center,right
-            navigationHOffset: 0,
-            navigationVOffset: 20,
-            soloArrowLeftHalign: "left",
-            soloArrowLeftValign: "center",
-            soloArrowLeftHOffset: 20,
-            soloArrowLeftVOffset: 0,
-            soloArrowRightHalign: "right",
-            soloArrowRightValign: "center",
-            soloArrowRightHOffset: 20,
-            soloArrowRightVOffset: 0,
-            touchenabled: "on",
-            // Enable Swipe Function : on/off
-            onHoverStop: "on",
-            // Stop Banner Timet at Hover on Slide on/off
-            stopAtSlide: -1,
-            // Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
-            stopAfterLoops: -1,
-            // Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
-            hideCaptionAtLimit: 0,
-            // It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
-            hideAllCaptionAtLilmit: 0,
-            // Hide all The Captions if Width of Browser is less then this value
-            hideSliderAtLimit: 0,
-            // Hide the whole slider, and stop also functions if Width of Browser is less than this value
-            shadow: 0,
-            //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
-            fullWidth: "on" // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
-        })
-        var bAnimateStop = 1;
-        $(window).scroll(function(){
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=yes">
+<title>鹏飞网络工作室</title>
+<meta name="keywords" content="石家庄网站建设,石家庄网站制作,石家庄网站设计,石家庄做网站,石家庄网站建设,鹏飞网络"/>
+<meta name="description" content="鹏飞网络专业从事石家庄网站建设、石家庄网站建设、石家庄网站制作；业务主要涉及全国各地，我们始终为您提供优质合理的网站制作报价及方案！"/>
+<meta name="renderer" content="webkit">
 
-            if(clientShow ('.h-service')){
-                $('.h-service .bd .service-list li').addClass('animation');
-            }
-            if(clientShow('.move-mod') && bAnimateStop === 1){
-                $('.case-slider').umxCaseSlider();
-                bAnimateStop = 2;
-            }
-            if(clientShow('.h-mission')){
-                $('.h-mission .bd').addClass('scale-animate');
-            }
-        });
-        $('#header').fixedNav();
-        $('.h-client .bd').scrollSlider();
-    });
-  </script> 
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
-</head> 
-<body> 
-  <div id="loader" style="display: none;"></div> 
-  <!--头部--> 
-  <div class="header"> 
-    <div class="header_bar"> 
-      <h1 class="logo"><a href="index.html"><img src="images/logo.png" title="鹏飞网络" alt="首页" /></a></h1> 
-      <ul id="social" class="social"> 
-        <li class="slist"><a class="sfocus" href="javascript:void(0);">Tel：15369173259</a></li> 
-        <li class="slist"><a class="sfocus" href="javascript:void(0);">QQ：2293080609</a></li>  
-      </ul> 
-    </div> 
-    
-    <div id="menu" class="menu"> 
-      <ul class="mwrap"> 
-        <li class="mli"> 
-          <a href="index.html" class="mlink curr" id="topMenu1"> 
-            <span class="mico mico_home">
-              <span class="micoi"></span>
-            </span> 
-            <span class="mname">首页</span> 
-          </a> 
-        </li> 
-        <li class="mli"> 
-          <a href="about.html" class="mlink" id="topMenu2"> 
-            <span class="mico mico_about">
-              <span class="micoi"></span>
-            </span> 
-            <span class="mname">关于我们</span> 
-          </a> 
-        </li> 
-        <li class="mli"> 
-          <a href="service.html" class="mlink" id="topMenu3"> 
-            <span class="mico mico_service">
-              <span class="micoi"></span>
-            </span> 
-            <span class="mname">服务范围</span> 
-          </a> 
-        </li> 
-        <li class="mli"> 
-          <a href="jzlx.html" class="mlink" id="topMenu4"> 
-            <span class="mico mico_case">
-              <span class="micoi"></span>
-            </span> 
-            <span class="mname">建站类型</span> 
-          </a> 
-        </li> 
-        <li class="mli"> 
-          <a href="case.html" class="mlink" id="topMenu6"> 
-            <span class="mico mico_contact">
-              <span class="micoi"></span>
-            </span> 
-            <span class="mname">客户案例</span> 
-          </a> 
-        </li> 
-        <li class="mli"> 
-          <a href="contact.html" class="mlink" id="topMenu5"> 
-            <span class="mico mico_news">
-              <span class="micoi"></span>
-            </span> 
-            <span class="mname">联系我们</span> 
-          </a> 
-        </li> 
-      </ul> 
-      <div class="mshadow"></div> 
-    </div> 
-  </div> 
-  <!--头部 end / --> 
-
-  <div class="header_bg"></div> 
-  <div class="banner"> 
-    <div id="bannerQuery" class="bwrap"> 
-      <ul class="bquery"> 
-        <li class="blist"><a><img src="images/banner0.jpg" title="鹏飞网络banner" alt="鹏飞网络banner" /></a></li> 
-        <li class="blist"><a><img src="images/banner1.jpg" title="鹏飞网络banner" alt="鹏飞网络banner" /></a></li> 
-        <li class="blist"><a><img src="images/banner2.jpg" title="鹏飞网络banner" alt="鹏飞网络banner" /></a></li> 
-        <li class="blist"><a><img src="images/banner3.jpg" title="鹏飞网络banner" alt="鹏飞网络banner" /></a></li> 
-        <li class="blist"><a><img src="images/banner4.jpg" title="鹏飞网络banner" alt="鹏飞网络banner" /></a></li> 
-      </ul> 
-    </div> 
-    <div class="bctrl"> 
-      <div id="bannerCtrl" class="bctrli"></div> 
-    </div> 
-  </div> 
-
-  <!--服务顶目--> 
-  <div class="h-service"> 
-    <div class="hd"> 
-      <strong style="color: #666">服务项目</strong> 
-      <div class="bor-bton"></div> 
-    </div> 
-    <div class="container bd"> 
-      <ul class="service-list"> 
-        <li class="animation"> 
-          <div class="mod"> 
-            <i class="icon i4"></i> 
-            <strong><a href="website_build.html" target="_blank">网站建设制作</a></strong> 
-            <p>企业官网、营销网站、电子商务网站</p> 
-          </div> 
-        </li> 
-        <li class="animation"> 
-          <div class="mod"> 
-            <i class="icon i3"></i> 
-            <strong><a href="website_400tel_fee.html" target="_blank">移动软件管理</a></strong> 
-            <p>APP开发、小程序开发、微信</p> 
-          </div> 
-        </li> 
-        <li class="animation"> 
-          <div class="mod"> 
-            <i class="icon i1"></i> 
-            <strong><a href="website_revision.html" target="_blank">企业软件管理</a></strong> 
-            <p>OA管理软件、ERP管理软件</p> 
-          </div> 
-        </li>
-        <li class="animation"> 
-          <div class="mod"> 
-            <i class="icon i2"></i> 
-            <strong><a href="website_revision.html" target="_blank">企业网络排名</a></strong> 
-            <p>SEO推广优化服务</p> 
-          </div> 
-        </li>         
-      </ul> 
-    </div> 
-  </div> 
-  <!--服务顶目 end / -->
-
-  <!--案例展示--> 
-  <div class="h-case"> 
-    <div class="hd"> 
-      <strong>案例展示</strong> 
-      <div class="bor-bton"></div> 
-    </div> 
-    <div class="container bd case-slider"> 
-      <div class="move-mod clear"> 
-        <ul class="case-list"> 
-          <li>
-            <a href="case_detail.html" target="_blank"> 
-              <img src="images/c1.jpg" title="武汉倍特威视系统" alt="武汉倍特威视系统" />
-              <strong>武汉倍特威视系统</strong> 
-            </a> 
-            <div class="bg"></div> 
-          </li>          
-          <li style="position: absolute; left: 0px; top: 0px; opacity: 1;">
-            <a href="/anli/web/339.html" target="_blank"> 
-              <img src="images/c2.jpg" title="石家庄卓海猎聘" alt="石家庄卓海猎聘" />
-              <strong>石家庄卓海猎聘</strong> 
-            </a> 
-            <div class="bg"></div> 
-          </li> 
-          <li>
-            <a href="case_detail.html" target="_blank"> 
-              <img src="images/c3.jpg" title="上海麦凯文实业" alt="上海麦凯文实业"/>
-              <strong>上海麦凯文实业</strong> 
-            </a> 
-            <div class="bg"></div> 
-          </li> 
-          <li>
-            <a href="case_detail.html" target="_blank"> 
-              <img src="images/c7.jpg" title="青少年骨龄评测与身高预测网" alt="青少年骨龄评测与身高预测网" />
-              <strong>青少年骨龄评测与身高预测网</strong> 
-            </a> 
-            <div class="bg"></div> 
-          </li>          
-          <li>
-            <a href="/anli/web/300.html" target="_blank"> 
-              <img src="images/c4.jpg" title="河北创拓文化传媒" alt="河北创拓文化传媒" />
-              <strong>河北创拓文化传媒</strong> 
-            </a> 
-            <div class="bg"></div> 
-          </li>
-          <li>
-            <a href="/anli/web/339.html" target="_blank"> 
-              <img src="images/c5.jpg" title="山东轴承英文网站" alt="山东轴承英文网站" />
-              <strong>山东轴承英文网站</strong> 
-            </a> 
-            <div class="bg"></div> 
-          </li> 
-          <li>
-            <a href="case_detail.html" target="_blank"> 
-              <img src="images/c6.jpg" title="北京职优选猎头" alt="北京职优选猎头" />
-              <strong>北京职优选猎头</strong> 
-            </a> 
-            <div class="bg"></div> 
-          </li>                                         
-        </ul> 
+<!--ico-->
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/wow.min_1.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/page.js"></script>
+</head>
+<body>
+<div class="header">
+  <div class="rowFluid">
+    <div class="span2 col-md-12">
+      <div class="logo"> <a href="index.html" title="返回首页"> <img src="images/logo.png" alt="鹏飞网络工作室" /> </a> </div>
+    </div>
+    <div class="span8">
+      <div class="mobileMenuBtn"><span class="span1"></span><span class="span2"></span><span class="span3"></span></div>
+      <div class="mobileMenuBtn_shad"></div>
+      <div class="header_menu">
+        <ul id="menu">
+          <li><a href="index.html"  class='active'  title="首页">首页</a></li>
+          <li><a href="about.html" title="关于我们">关于我们</a></li>
+          <li><a href="solution.html" title="解决方案">解决方案</a></li>
+          <li><a href="case.html" title="客户案例">客户案例</a></li>
+          <li><a href="type.html" title="建站方案">建站类型</a></li>
+          <li><a href="news.html" title="新闻中心">新闻中心</a></li>
+          <li><a href="contact.html" title="联系我们">联系我们</a></li>
+        </ul>
       </div>
+    </div>
+    <div class="span2"> </div>
+  </div>
+</div>
 
-      <div class="mod b-mod"> 
-        <a href="case.html" class="link-more" target="_blank">查看更多 + </a> 
-        <span class="next"> 
-          <em class="arrow arrowR"></em> 
-          <small class="arrow arrowR s-arrow"></small> 
-        </span> 
-        <span class="preve"> <em class="arrow arrowL"></em> 
-          <small class="arrow arrowL l-s-arrow"></small> 
-        </span> 
-      </div> 
-    </div> 
-  </div> 
-  <!--案例展示 end / --> 
-
-  <!--关于我门--> 
-  <div class="h-case1"> 
-    <div class="hd"> 
-      <strong style="color: #666">关于我们</strong> 
-      <div class="bor-bton"></div> 
-    </div> 
-    <div class="container bd case-slider"> 
-      <div class="iaAndn"> 
-        <div id="iabout" class="iabout"> 
-          <div class="iaHeader"> 
-            <a class="iaPrev" href="javascript:void(0);" title="上一个"></a> 
-            <a class="iaNext" href="javascript:void(0);" title="下一个"></a> 
-          </div> 
-          <ul class="iaQuery"> 
-            <li class="iaList"> 
-              <div class="iaName"> 
-                <span class="iaNameEn">ABOUT US</span> 
-                <span class="iaNameCn">公司简介</span> 
-              </div> 
-              <div class="iaBody"> 
-                <div class="iaPic"> 
-                  <a href="about.html"><img src="images/kmcyzs1.jpg" /></a> 
-                  <span class="iaPicMask"></span> 
-                  <span class="iaPicName">用心服务 塑造品质</span> 
+<div class="page">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="main">
+        <div class="banner">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="owl-demo">
+                <div class="item">
+                  <h3 class="banner_title">主流三合一响应式网站</h3>
+                  <div class="banner_text">一个网站就能自适应PC端+平板端+手机端</div>
+                  <div class="banner_button"> <a href="http://wpa.qq.com/msgrd?v=3&uin=97442312&site=qq&menu=yes" target="_blank" title="详细咨询">马上咨询</a> </div>
                 </div> 
-                <div class="iaIntro"> 
-                  <h4 class="iaTitle">鹏飞网络 —— 简介</h4> 
-                  <div class="iaContent">
-                  鹏飞网络科技有限公司成立至今，主要致力于互联网应用技术服务!业务涵盖-平面设计、网站建设、网站制作、网站维护、移动软件管理、企业管理软件、企业网络排名等；我们能根据客户的需求，提供全面、有效的解决方案。
-                  </div> 
-                </div> 
-              </div> 
-            </li> 
-            <li class="iaList"> 
-              <div class="iaName"> 
-                <span class="iaNameEn">ABOUT US</span> 
-                <span class="iaNameCn">经营理念</span> 
-              </div> 
-              <div class="iaBody"> 
-                <div class="iaPic"> 
-                  <a href="about.html"><img src="images/kmcyzs2.jpg" /></a> 
-                  <span class="iaPicMask"></span> 
-                  <span class="iaPicName">客户至上 妥善无忧</span> 
-                </div> 
-                <div class="iaIntro"> 
-                  <h4 class="iaTitle">鹏飞网络 —— 理念</h4> 
-                  <div class="iaContent">
-                  鹏飞网络科技有限公司以良好的商业信誉，完善的服务及深厚的技术力量，以客户服务为中心，专业为客户量身打造客户喜欢的网站平台。我们提供专业的应用整体解决方案和服务，同时注重加强专业解决方案的开发与系统集成服务。客户满意度是我们永恒的追求。
-                  </div> 
-                </div> 
-              </div> 
-            </li> 
-            <li class="iaList"> 
-              <div class="iaName"> 
-                <span class="iaNameEn">ABOUT US</span> 
-                <span class="iaNameCn">企业文化</span> 
-              </div> 
-              <div class="iaBody"> 
-                <div class="iaPic"> 
-                  <a href="about.html"><img src="images/kmcyzs3.jpg" /></a> 
-                  <span class="iaPicMask"></span> 
-                  <span class="iaPicName">仁义礼智信，温良恭俭让</span> 
-                </div> 
-                <div class="iaIntro"> 
-                  <h4 class="iaTitle">鹏飞网络 —— 文化</h4> 
-                  <div class="iaContent">
-                  我们主要致力于企业网站建设、品牌形象设计、交互设计、视觉设计于一体的专业用户体验的互联网服务。一次次突破自我极限，一次次追求更好的作品
-                  我们的创新思维永无止境。
-                  </div> 
-                </div> 
-              </div> 
-            </li> 
-          </ul> 
-          <div class="iaCtrl"></div> 
-        </div> 
-      </div> 
-    </div> 
-  </div> 
-  <!--关于我们 end / --> 
+                <div class="item">                 
+                  <h3 class="banner_title">忠诚 ● 保障 ● 放心</h3>
+                  <div class="banner_text">实力公司，专业团队，修改到满意为止</div>
+                  <div class="banner_button"> <a href="http://wpa.qq.com/msgrd?v=3&uin=97442312&site=qq&menu=yes" target="_blank" title="详细咨询">马上咨询</a> </div>
+                </div>
+                
+                <div class="item">
+                  <h3 class="banner_title">为企业所想 满足企业需求</h3>
+                  <div class="banner_text">升级以您的需求为导向,提升以您的价值为目标</div>
+                  <div class="banner_button"> <a href="http://wpa.qq.com/msgrd?v=3&uin=97442312&site=qq&menu=yes" target="_blank" title="详细咨询">马上咨询</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="container" class="mpage">
+            <div id="anitOut" class="anitOut"></div>
+          </div>
+        </div>
 
-  <!--关于 动态--> 
-  <div class="umeixun"> 
-    <div class="container"> 
-      <div class="mod-l"></div> 
-      <div class="mod-r"> 
-        <div class="h-about"> 
-          <div class="hd"> 
-            <strong>我们的优势</strong> 
-          </div> 
-          <div class="bd"> 
-            <ul class="h-news-list"> 
-              <li><a title="我们的优势">市场优势 —— 解决网建市场刚需，顺应时代发展走势</a></li>
-              <li><a title="我们的优势">界面优势 —— 主流设计风格，极致交互体验，提升品牌价值</a></li> 
-              <li><a title="我们的优势">产品优势 —— 高大上的完美用户体验</a></li>
-              <li><a title="我们的优势">客户优势 —— 品牌提升、企业转型升级提供最佳推广环境</a></li>
-              <li><a title="我们的优势">服务优势 —— 以客户服务为中心，专业为客户量身打造客户喜欢的网站平台</a></li>
-            </ul>  
-          </div> 
-        </div> 
-      </div> 
-    </div> 
-  </div> 
-  <!--关于动态 end / --> 
-  
-  <!--服务流程--> 
-  <div class="h-mission"> 
-    <div class="hd"> 
-      <strong>服务流程</strong> 
-      <div class="bor-bton"></div> 
-    </div> 
-    <div class="container bd scale-animate"> 
-      <span class="s1"> <i class="icon s-animate"></i> <em class="s1-user">联系咨询</em> </span> 
-      <span class="s2 ab"> <i class="icon"></i> <em class="a2">功能需求</em> </span> 
-      <span class="s3 ab"> <i class="icon"></i> <em class="a3">样式风格</em> </span> 
-      <span class="s4 ab"> <i class="icon"></i> <em class="a4">需求评估</em> </span> 
-      <span class="s5 ab"> <i class="icon"></i> <em class="a5">网站规划</em> </span> 
-      <span class="s6 ab"> <i class="icon"></i> <em class="a6">UI规划</em> </span> 
-      <span class="s7 ab"> <i class="icon"></i> <em class="a7">品牌形象&amp;概念</em> </span> 
-      <span class="s8"> <i class="icon"></i> <em>视觉表现</em> </span> 
-      <span class="s9"> <i class="icon"></i> <em>用户体验</em> </span> 
-      <span class="s10 ab"> <i class="icon s-animate"></i> <em class="a10 s2-user">视觉</em> </span> 
-      <span class="s11 ab"> <i class="icon"></i> <em>前端开发</em> </span> 
-      <span class="s12 ab"> <i class="icon"></i> <em>程序开发</em> </span> 
-      <span class="s13 ab"> <i class="icon"></i> <em class="a7">DIV+CSS+JS</em></span> 
-      <span class="s14"> <i class="icon"></i> <em>网站编程</em> </span> 
-      <span class="s15 ab"> <i class="icon"></i> <em class="a15">浏览器</em> </span> 
-      <span class="s16 ab"> <i class="icon"></i> <em class="a7">兼容主流浏览器</em> </span> 
-      <span class="s17 ab"> <i class="icon s-animate"></i> <em class="a17">完成</em> </span> 
-      <span class="s18 ab"> <i class="icon"></i> <em class="a2 a18">上线运营</em> </span> 
-    </div> 
-  </div> 
-  <!--服务流程 end / --> 
+        <div class="index_product">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container">
+                <div class="all_title1 wow fadeInDown">
+                  <h3 class="title">我们的产品</h3>
+                  <div class="text">OUR PRODUCT</div>
+                </div>
+                <div class="rowFluid">
+                  <div class="index_product_content">
+                    <div class="span4 col-md-6 col-xs-12 wow fadeInDown"> <a  class="index_product_list" title="响应式企业网站建设">
+                      <div class="list_backimg list_backimg1">
+                        <div class="list_img"> <img src="images/045.png" alt="响应式企业网站建设" /> </div>
+                        <div class="list_txt">
+                          <div class="list_title">企业官网</div>
+                          <div class="list_text">CORPORATE WEBSITES</div>
+                        </div>
+                      </div>
+                      </a> </div>
+                    <div class="span4 col-md-6 col-xs-12 wow flipInX"> <a  class="index_product_list" title="响应式商城网站建设">
+                      <div class="list_backimg list_backimg2">
+                        <div class="list_img"> <img src="images/046.png" alt="响应式商城网站建设" /> </div>
+                        <div class="list_txt">
+                          <div class="list_title">购物商城</div>
+                          <div class="list_text">SHOPPING MALL</div>
+                        </div>
+                      </div>
+                      </a> </div>
+                    <div class="span4 col-md-6 col-xs-12 wow fadeInRight"> <a  class="index_product_list" title="空间域名">
+                      <div class="list_backimg list_backimg3">
+                        <div class="list_img"> <img src="images/047.png" alt="空间域名" /> </div>
+                        <div class="list_txt">
+                          <div class="list_title">空间域名</div>
+                          <div class="list_text">SPACE SERVICE</div>
+                        </div>
+                      </div>
+                      </a> </div>
+                    <div class="span4 col-md-6 col-xs-12 wow fadeInDown"> <a  class="index_product_list" title="生态级行业门户">
+                      <div class="list_backimg list_backimg4">
+                        <div class="list_img"> <img src="images/048.png" alt="生态级行业门户" /> </div>
+                        <div class="list_txt">
+                          <div class="list_title">行业门户</div>
+                          <div class="list_text">INDUSTRY PORTAL</div>
+                        </div>
+                      </div>
+                      </a> </div>
+                    <div class="span4 col-md-6 col-xs-12 wow flipInX"> <a  class="index_product_list" title="H5三合一网站">
+                      <div class="list_backimg list_backimg5">
+                        <div class="list_img"> <img src="images/049.png" alt="H5三合一网站" /> </div>
+                        <div class="list_txt">
+                          <div class="list_title">三合一网站</div>
+                          <div class="list_text">TRIAD WEBSITE</div>
+                        </div>
+                      </div>
+                      </a> </div>
+                    <div class="span4 col-md-6 col-xs-12 wow fadeInRight"> <a  class="index_product_list" title="生态级响应式全网营销平台">
+                      <div class="list_backimg list_backimg6">
+                        <div class="list_img"> <img src="images/050.png" alt="生态级响应式全网营销平台" /> </div>
+                        <div class="list_txt">
+                          <div class="list_title">全网营销</div>
+                          <div class="list_text">NETWORK MARKETING</div>
+                        </div>
+                      </div>
+                      </a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- 网站底部 开始 --> 
-  <section id="site_footer"> 
-    <div class="footer_glare"></div> 
-    <section class="container_12 widgetized_footer">
-      <div class="grid_3"> 
-        <aside class="widget widget_categories"> 
-          <h3 class="widget-title"> <span> 快速导航 </span> </h3> 
-          <ul> 
-            <li> <a href="index.html">首页</a></li> 
-            <li> <a href="about.html">关于我们</a></li> 
-            <li> <a href="service.html">服务范围</a></li> 
-            <li> <a href="jzlx.html">建站类型</a></li> 
-            <li> <a href="case.html">客户案例</a></li>
-            <li> <a href="contact.html">联系我们</a></li> 
-          </ul>           
-        </aside> 
-        <div class="clear"> </div> 
-      </div>       
-      <div class="grid_5"> 
-        <aside class="widget widget_categories"> 
-          <h3 class="widget-title"> <span> 联系方式 </span> </h3> 
-          <ul> 
-            <li> <a>地址：河北省石家庄市桥西区友谊南大街46号</a></li> 
-            <li> <a>电话：15369173259</a></li> 
-            <li> <a>QQ：2293080609</a></li> 
-            <li> <a>邮箱：2293080609@qq.com</a></li>  
-          </ul>                  
-        </aside> 
-        <div class="clear"> </div> 
-      </div>   
-      <div class="grid_4"> 
-        <aside class="widget"> 
-          <h3 class="widget-title"> <span> 扫码咨询 </span> </h3>
-          <ul id="erweima"> 
-            <li><img src="images/erweima.jpg" alt="二维码"></li> 
-            <li><img src="images/erweimaliupengfei.jpg" alt="技术总监"></li>   
-          </ul>           
-        </aside> 
-      </div> 
-    </section> 
-  </section> 
+        <div class="platform_advantage">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container">
+                <div class="all_title2 wow fadeInUp">
+                  <h3 class="title">我们的优势</h3>
+                  <div class="text">OUR ADVANTAGES</div>
+                </div>
+                <div class="rowFluid">
+                  <div class="platform_advantage_content">
+                    <div class="span3 col-xm-6 col-xs-12 wow bounceIn">
+                      <div class="platform_advantage_list">
+                        <div class="platform_advantage_img"> <img src="images/009.png" alt="我们的优势" /> </div>
+                        <div class="platform_advantage_brief">
+                          <div class="brief_title">快速建站</div>
+                          <div class="brief_text"> 打破传统网站制作工时<br />
+                            网站制作最快只需1天 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="span3 col-xm-6 col-xs-12 wow bounceInRight">
+                      <div class="platform_advantage_list">
+                        <div class="platform_advantage_img"> <img src="images/010.png" alt="我们的优势" /> </div>
+                        <div class="platform_advantage_brief">
+                          <div class="brief_title">多合一终端使用</div>
+                          <div class="brief_text"> 一个网站能够在CP+平板+手机<br />
+                            完美响应展示</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="span3 col-xm-6 col-xs-12 wow bounceIn">
+                      <div class="platform_advantage_list">
+                        <div class="platform_advantage_img"> <img src="images/012.png" alt="我们的优势" /> </div>
+                        <div class="platform_advantage_brief">
+                          <div class="brief_title">高端设计</div>
+                          <div class="brief_text"> 主流设计风格，极致交互体验，<br />
+                            提升品牌价值 </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="span3 col-xm-6 col-xs-12 wow bounceInRight">
+                      <div class="platform_advantage_list">
+                        <div class="platform_advantage_img"> <img src="images/013.png" alt="我们的优势" /> </div>
+                        <div class="platform_advantage_brief">
+                          <div class="brief_title">保障放心</div>
+                          <div class="brief_text"> 服务为中心，为客户量身打造喜欢的网站 <br />
+                            客户满意为止</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rowFluid">
+                <div class="waves_box">
+                  <canvas id="waves" class="waves"></canvas>
+                </div>
+              </div>
+              <div class="container">
+                <div class="rowFluid">
+                  <div class="response_shows">
+                    <div class="response_shows_box wow bounceIn">
+                      <div class="response_shows_width">
+                        <div class="pc"> <img src="images/015.png" alt="案例展示" />
+                          <div class="pic">
+                            <div class="item"> <img src="images/0511.jpg" alt="案例展示" /> </div>
+                            <div class="item"> <img src="images/0512.jpg" alt="案例展示" /> </div>
+                            <div class="item"> <img src="images/0513.jpg" alt="案例展示" /> </div>
+                          </div>
+                        </div>
+                        <div class="pad"> <img src="images/017.png" alt="案例展示" />
+                          <div class="pic">
+                            <div class="item"> <img src="images/0521.jpg" alt="案例展示" /> </div>
+                            <div class="item"> <img src="images/0522.jpg" alt="案例展示" /> </div>
+                            <div class="item"> <img src="images/0523.jpg" alt="案例展示" /> </div>
+                          </div>
+                        </div>
+                        <div class="phone"> <img src="images/016.png" alt="案例展示" />
+                          <div class="pic">
+                            <div class="item"> <img src="images/0531.jpg" alt="案例展示" /> </div>
+                            <div class="item"> <img src="images/0532.jpg" alt="案例展示" /> </div>
+                            <div class="item"> <img src="images/0533.jpg" alt="案例展示" /> </div>
+                          </div>
+                        </div>
+                        <div class="thumb"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
 
-  <section id="site_footer_second"> 
-    <section class="container_12 site_footer_inner">  
-      <div class="footer2_right ">
-      鹏飞网络科技有限公司 Copyright © <script>document.write(new Date().getFullYear())</script> All Rights Reserved.未经许可,不可拷贝或镜像 备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank" style="white-space: normal;">冀ICP备000000号</a>
-      </div> 
-      <div class="clear"> </div> 
-    </section> 
-    <div class="clear"> </div> 
-  </section> 
-  <div class="clear"> </div> 
-  <!-- 网站底部 end --> 
+        <div class="marketing_advantage">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container">
+                <div class="all_title2 wow fadeInUp">
+                  <h3 class="title">营销优势</h3>
+                  <div class="text">MARKETING ADVANTAGE</div>
+                </div>
+                <div class="rowFluid">
+                  <div class="marketing_advantage_content">
+                    <div class="span3 col-sm-6 wow flipInY">
+                      <div class="marketing_advantage_list"> <img src="images/019.jpg" alt="响应式跨屏营销网站" /> </div>
+                    </div>
+                    <div class="span3 col-sm-6">
+                      <div class="span12 wow flipInY">
+                        <div class="marketing_advantage_list"> <img src="images/054.jpg" />
+                          <div class="marketing_advantage_brief">
+                            <div class="brief_title">全网营销<span><img src="images/020.png" alt="响应式网站营销" /></span></div>
+                            <div class="brief_text">响应式全屏幕营销网站，无需重复投资无需重复维护，无需重复运营</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="span12 wow flipInY">
+                        <div class="marketing_advantage_list"> <img src="images/054.jpg" />
+                          <div class="marketing_advantage_brief">
+                            <div class="brief_title">优化搜索<span><img src="images/023.png" alt="响应式网站SEO" /></span></div>
+                            <div class="brief_text">SEO轻松提高百度谷歌等搜索引擎的关键词自然排名。</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="span3 col-sm-6">
+                      <div class="span12 wow flipInY">
+                        <div class="marketing_advantage_list"> <img src="images/054.jpg" />
+                          <div class="marketing_advantage_brief">
+                            <div class="brief_title">微信无缝对接<span><img src="images/021.png" alt="平台微信营销" /></span></div>
+                            <div class="brief_text">全面整合微信营销，数据对接微信互动与分享</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="span12 wow flipInY">
+                        <div class="marketing_advantage_list"> <img src="images/054.jpg" />
+                          <div class="marketing_advantage_brief">
+                            <div class="brief_title">二维码<span><img src="images/024.png" alt="二维码分享" /></span></div>
+                            <div class="brief_text">生成页面二维码，任意分享</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="span3 col-sm-6">
+                      <div class="span12 wow flipInY">
+                        <div class="marketing_advantage_list"> <img src="images/054.jpg" />
+                          <div class="marketing_advantage_brief">
+                            <div class="brief_title">社交分享<span><img src="images/022.png" alt="跨屏网站社交分享" /></span></div>
+                            <div class="brief_text">一键分享到微博、QQ空间朋友圈等社交网络</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="span12 wow flipInY">
+                        <div class="marketing_advantage_list"> <img src="images/054.jpg" />
+                          <div class="marketing_advantage_brief">
+                            <div class="brief_title">分销体系<span><img src="images/025.png" alt="响应式分销商城网站" /></span></div>
+                            <div class="brief_text">系统化整合客户快速营销</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- 向上代码 开始 --> 
-  <div style="display: none;" id="rocket-to-top"> 
-    <div style="opacity:0;display: block;" class="level-2"></div> 
-    <div class="level-3"></div> 
-  </div> 
+        <div class="news_center">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container">
+                <div class="all_title1 wow fadeInUp">
+                  <h3 class="title">新闻中心</h3>
+                  <div class="text">NEWS TRENDS</div>
+                </div>
+                <div class="rowFluid">
+                  <div class="news_center_content">
+                    <div class="span4 col-sm-12 wow fadeInDown" data-wow-delay="1.2s">
+                      <div class="news_center_list">
+                        <div class="news_center_list_img"> <img src="images/034.jpg" alt="企业资讯" /> </div>
+                        <div class="news_center_list_title">企业资讯</div>
+                        <ul>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心"><i class="fa fa-angle-right"></i>企业网站应该多长时间备份一次？ </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心"><i class="fa fa-angle-right"></i>如何选择网站关键词? </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心"><i class="fa fa-angle-right"></i>企业建站选择主机和产品服务遇到的问题 </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心"><i class="fa fa-angle-right"></i>企业用网站进行网络宣传的优势 </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心"><i class="fa fa-angle-right"></i>什么是伪静态？伪静态有何作用?哪种好？ </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
 
-  <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script> 
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="span4 col-sm-12 wow fadeInUp" data-wow-delay="0.7s">
+                      <div class="news_center_list">
+                        <div class="news_center_list_img"> <img src="images/035.jpg" /> </div>
+                        <div class="news_center_list_title">充电站</div>
+                        <ul>
+                          <li class="span12"> 
+                            <a href="news-chongdian.html" class="span8" title="新闻中心">  <i class="fa fa-angle-right"></i>东莞家具出走湖北？家具业尝试高端规划集聚 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>改良与创新 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>如何充分发挥SEO功能 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>SEO怎么加快文章的收录速度 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>SEO快速排名算法 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="span4 col-sm-12 wow fadeInDown" data-wow-delay="1.3s">
+                      <div class="news_center_list">
+                        <div class="news_center_list_img"> <img src="images/036.jpg" /> </div>
+                        <div class="news_center_list_title">行业资讯</div>
+                        <ul>
+                          <li class="span12"> 
+                            <a href="news-hangye.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>SEO网站的基本术语 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>企业建站系统有何优势？ 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>什么是伪静态？伪静态有何作用? 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>为什么企业要建多国语言网站？ 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                          <li class="span12"> 
+                            <a href="news.html" class="span8" title="新闻中心">
+                              <i class="fa fa-angle-right"></i>企业用网站进行网络宣传的优势 
+                            </a>
+                            <div style="font-size: 12px; color: #ccc; float: right; margin-top: 3px;">10-01</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+
+        <div class="join_in">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container">
+                <div class="join_in_title wow fadeInUp">鹏飞网络<span>——致力于互联网应用技术服务</span></div>
+                <div class="join_in_text wow fadeInLeft">根据客户的需求，提供全面、有效的解决方案。 </div>
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=97442312&site=qq&menu=yes " class="all_button join_in_button wow fadeInUp" target="_blank">点击咨询</a> </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="js/effects.js"></script>
+
+        <div class="footer wow fadeInUp">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container">
+                <div class="footer_content">
+                  <div class="span4 col-xm-12 daohang">
+                    <div class="footer_list">
+                      <div class="span6">
+                        <div class="bottom_logo"> <img src="images/weixin.png" alt="二维码" /> </div>
+                      </div>
+                      <div class="span6 col-xm-12">
+                        <div class="quick_navigation">
+                          <div class="quick_navigation_title">快速导航</div>
+                          <ul>
+                            <li><a href="index.html" title="首页">首页</a></li>
+                            <li><a href="about.html" title="关于我们">关于我们</a></li>
+                            <li><a href="solution.html" title="解决方案">解决方案</a></li>
+                            <li><a href="case.html" title="客户案例">客户案例</a></li>
+                            <li><a href="type.html" title="建站方案">建站类型</a></li>
+                            <li><a href="news.html" title="新闻中心">新闻中心</a></li>
+                            <li><a href="contact.html" title="联系我们">联系我们</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="span4 col-xm-6 col-xs-12">
+                    <div class="footer_list">
+                      <div class="footer_cotact">
+                        <div class="footer_cotact_title">联系方式</div>
+                        <ul>
+                          <li><span class="footer_cotact_type">地址：</span><span class="footer_cotact_content">河北省沧州市</span></li>
+                          <li><span class="footer_cotact_type">电话：</span><span class="footer_cotact_content"><a href="tel:66465888" class="call">66465888</a></span></li>
+                          <li><span class="footer_cotact_type">网址：</span><span class="footer_cotact_content"><a href="#" title="官网">www.mycodes.net</a></span></li>
+                          <li><span class="footer_cotact_type">邮箱：</span><span class="footer_cotact_content">97442312@qq.com</span></li>
+                          <li><span class="footer_cotact_type">QQ：</span><span class="footer_cotact_content">97442312</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="copyright">鹏飞网络科技有限公司 Copyright © <script>document.write(new Date().getFullYear())</script> All Rights Reserved.未经许可,不可拷贝或镜像 备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank" style="white-space: normal;color: #8a8a8a">冀ICP备000000号</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
